@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/media"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkTheme"
+        android:backgroundTint="@color/darkTheme"
+        android:orientation="vertical"
+        tools:context=".SearchActivity" >
+
+        <LinearLayout
+            android:id="@+id/headerMedia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/fourteenthDP"
+                android:layout_height="@dimen/fourteenthDP"
+                android:layout_marginStart="@dimen/tenDP"
+                android:layout_marginTop="@dimen/tenDP"
+                android:backgroundTint="@color/darkTheme"
+                android:src="?attr/homeAsUpIndicator"
+                android:visibility="visible"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/mainName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourteenthDP"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/sixteenDP"
+                android:layout_weight="1"
+                android:background="@color/darkTheme"
+                android:backgroundTint="@color/darkTheme"
+                android:gravity="center_vertical"
+                android:text="@string/media"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:translationX="0dp"
+                android:translationY="10dp"
+                tools:ignore="VisualLintBounds" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
